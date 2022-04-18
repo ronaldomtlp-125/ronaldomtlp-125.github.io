@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en Html</title>
+</head>
+<body>
+    <!--*maxlength= Limitar los caracteres escritos en el formulario como por ejemplo limitar hasta solo 8 caracteres ensu contraseña   
+        /minlength= Limitar los caracteres escritos en el formulario como por ejemplo limitar a como 5 caracteres como minimo para poder ser valido-->
+    
+    
+    
+    <h1>Completa tu información</h1>
+    <form action="/Trabajos/index.html">
+        <p>Nombres   : <input type="text" name="nombre" required size="40" placeholder="Escribe tus nombres"></p>
+        
+        <p>Apellidos: <input type="text" name="apellido" size="40" placeholder="Escribre tus dos apellidos" required></p>
+        
+        <p>Nacionalidad: <input type="text" name="nacionalidad" value="Perú" size="20" placeholder="Escribe tu nacionalidad" disabled readonly required></p>
+        
+        <h2>Escribe aquí tu usuario y contraseña</h2>
+        
+        <p>Usuario:<input type="text" name="usuario" maxlength="8" required></p>
+        
+        <p>Contraseña:<input type="password" name="Contraseña" minlength="5" maxlength="10" placeholder="Minimo 5 y maximo 10 caracteres" size="25" required>  </p>
+        
+        <input type="button" value="Enviar">
+        <p> <button type="button" style="background-color:aquamarine; width: 30px; height: 60px; color: black; "   value="OK">
+            OK </button></p>
+
+        <input type="submit" value="Enviar Formulario" >
+    
+
+        <p>Sexo: <input type="radio" value="V" name="hm" > Varon
+                    <input type="radio" value="M" name="hm" > Mujer </p>
+    </form>
+
+
+
+</body>
+</html>
