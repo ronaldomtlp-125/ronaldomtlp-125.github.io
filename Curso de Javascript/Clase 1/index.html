@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - #1 Introducción</title>
+</head>
+
+<!-- el atributo "src" hace que se priorice el js externo que lo que este en la etiqueta script, veras que lo que esta declarado dentro de script no se vera en la pantalla  -->
+
+<!-- El script siempre deve ir al final del body por cuestiones prácticas ya que en el navegador se ejecuta en orden, si el js externo es extenso la página cargara primero el js y puede demorar y no mostrar el html, entre otras cosas. Solo los scripts mas simples se colocan primero -->
+<body>
+    <script src="/Clase 1/clase_1.js">
+        document.write("<h1>Hola mundo</h1>");
+    </script>
+</body>
+</html>
